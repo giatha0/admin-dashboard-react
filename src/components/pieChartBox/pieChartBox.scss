@@ -1,4 +1,5 @@
 @import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
 
 .pieChartBox {
     height         : 100%;
@@ -26,11 +27,22 @@
         gap            : 10px;
         font-size      : 14px;
 
+        @include sm {
+            flex-direction: column;
+            gap           : 5px;
+        }
+
         .option {
             display       : flex;
             flex-direction: column;
             gap           : 10px;
             align-items   : center;
+
+            @include sm {
+                flex-direction   : row;
+                // gap           : 20px;
+                justify-content  : space-between;
+            }
 
             .title {
                 display    : flex;

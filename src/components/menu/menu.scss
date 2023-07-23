@@ -27,6 +27,10 @@
             padding      : 10px;
             border-radius: 5px;
 
+            @include sm {
+                transform: scale(0.9);
+            }
+
             &:hover {
                 background-color: $soft-bg;
             }

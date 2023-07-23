@@ -23,23 +23,42 @@
     }
 
     @include sm {
-        grid-auto-rows: minmax(120px, auto);
+        grid-auto-rows       : minmax(120px, auto);
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
     }
+
+
+
 
     .box {
         padding      : 20px;
         border-radius: 10px;
         border       : 2px solid $soft-bg;
+
+        // @include sm {
+        //     :nth-child(4) {
+        //         grid-row: 1;
+        //     }
+        // }
+
+
     }
 
     .box1 {
         grid-column: span 1;
         grid-row   : span 3;
+
+
     }
 
     .box4 {
         grid-column: span 1;
         grid-row   : span 3;
+
+        @include sm {
+            grid-row: 8/9;
+        }
     }
 
     .box7 {

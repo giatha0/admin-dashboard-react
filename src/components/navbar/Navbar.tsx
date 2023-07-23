@@ -17,7 +17,7 @@ const Navbar = () => {
                 </div>
                 <div className="user">
                     <img
-                        src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        src='https://images.pexels.com/photos/17071640/pexels-photo-17071640/free-photo-of-man-in-sunglasses-and-turtleneck.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
                         alt=""
                     />
                     <span>Thao</span>

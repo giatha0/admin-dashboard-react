@@ -1,4 +1,5 @@
 @import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
 
 .topBox {
     h1 {
@@ -10,6 +11,9 @@
     }
 
     .list {
+        @include sm {
+            font-size: 13px;
+        }
 
         .listItem {
             display        : flex;

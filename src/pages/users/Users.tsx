@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import DataTable from '../../components/dataTable/DataTable'
 import { userRows } from '../../data';
 import './users.scss'
-import { DataGrid, GridColDef, GridValueGetterParams, GridToolbar } from '@mui/x-data-grid';
+import { GridColDef } from '@mui/x-data-grid';
+import Add from '../../components/add/Add';
 
 
 const columns: GridColDef[] = [
@@ -53,13 +55,21 @@ const columns: GridColDef[] = [
 ];
 
 const Users = () => {
+    const [open, setOpen] = useState(false);
     return (
         <div className="users">
             <div className="infor">
                 <h1>Users</h1>
-                <button>Add new user</button>
+                <button onClick={() => setOpen(true)}>Add new user</button>
             </div>
             <DataTable slug="users" columns={columns} rows={userRows} />
+            {open &&
+                <Add
+                    slug="user"
+                    columns={columns}
+                    setOpen={setOpen}
+                />
+            }
         </div>
     )
 }

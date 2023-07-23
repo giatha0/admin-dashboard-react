@@ -3,6 +3,9 @@
     .dataGrid {
         background-color: white;
         padding         : 20px;
+        width           : calc(100vw - 250px);
+
+
 
         .MuiDataGrid-toolbarContainer {
             flex-direction: row-reverse;

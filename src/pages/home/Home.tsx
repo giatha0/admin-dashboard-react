@@ -12,6 +12,8 @@ import BigChartBox from '../../components/bigChartBox/BigChartBox'
 
 const Home = () => {
     return (
+
+
         <div className="home">
             <div className="box box1">
                 <TopBox />
@@ -43,6 +45,8 @@ const Home = () => {
                 <BarChartBox {...barChartBoxRevenue} />
             </div>
         </div>
+
+
     )
 }
 

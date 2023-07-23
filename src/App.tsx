@@ -28,8 +28,6 @@ function App() {
           <div className="contentContainer">
             <Outlet />
           </div>
-
-
         </div>
         <Footer />
 

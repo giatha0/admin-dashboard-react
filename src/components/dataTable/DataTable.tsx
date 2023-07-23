@@ -1,5 +1,5 @@
 import "./dataTable.scss"
-import { DataGrid, GridColDef, GridValueGetterParams, GridToolbar } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridToolbar } from '@mui/x-data-grid';
 import { Link } from "react-router-dom";
 
 type Props = {
